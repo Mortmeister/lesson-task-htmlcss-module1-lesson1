@@ -1,0 +1,303 @@
+/* Fonts */
+
+@font-face {
+  font-family: "BootsAndSpurs";
+  src: url("../fonts/BootsAndSpurs.ttf"), format("tff");
+}
+
+body {
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100dvh;
+  display: grid;
+  min-height: 100vh;
+  margin: 0px;
+  grid-template-rows: auto 1fr auto;
+}
+
+.l-list h2 {
+  font-family: Roboto;
+}
+
+h1,
+h2,
+.font-boots {
+  font-family: "BootsAndSpurs";
+}
+
+/* Layout */
+
+a {
+  text-decoration: none;
+}
+
+header,
+footer {
+  background-color: #202020;
+  color: #fff;
+}
+
+footer {
+  margin-top: 6rem;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 10px;
+}
+
+header a {
+  color: #fff;
+  padding: 10px;
+}
+
+.product--sale {
+  display: flex;
+}
+
+.old-price {
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+/* Component */
+
+.c-btn {
+  color: white;
+  background-color: #bb0000;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 10px 80px;
+  border-radius: 0.25em;
+}
+
+.c-small {
+  padding: 8px 15px;
+  font-size: 0.7em;
+  min-width: 52px;
+  text-align: center;
+  margin-top: 5px;
+}
+.c-sale {
+  color: white;
+  background-color: #127300;
+}
+
+.c-active {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #202020;
+}
+
+/* Home page */
+
+.l-hook {
+  background-color: #e8e8e8;
+  background-image: url("../images/home-header.jpg");
+  background-size: cover;
+  height: 70vh;
+  background-position-x: right;
+  background-position-y: bottom;
+  position: relative;
+}
+
+.hook-position {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left: 100px;
+}
+
+.l-selling-points,
+.l-review__flex {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.l-selling-points > *,
+.l-review__flex > * {
+  flex: 1;
+}
+
+.l-selling-points__images {
+  border-radius: 4rem;
+  height: auto;
+  min-width: 0;
+}
+
+.l-review {
+  background-color: #e8e8e8;
+  padding: 50px;
+}
+.l-review h2 {
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+.l-review_images {
+  border-radius: 50%;
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-quote {
+  display: block;
+}
+
+.l-featured_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.l-featured h2 {
+  text-align: center;
+}
+
+.l-featured__product {
+  background-color: #fbfbfb;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.l-featured__product img {
+  width: 100%;
+  grid-column: -1/1;
+}
+
+.l-featured__product h3,
+p {
+  grid-column: 1;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.l-featured__product h3,
+.l-featured__product h2 {
+  font-size: 1.2em;
+}
+
+.c-small {
+  grid-column: 2;
+  grid-row: 2/3;
+}
+
+/* Guitars page */
+
+.l-list img {
+  width: 100%;
+}
+
+.l-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.l-guitar {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.l-guitar h1 {
+  text-align: center;
+}
+
+/* Product specific page */
+
+.product-specific {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+  overflow: hidden;
+  height: max-content;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.product-specific > * {
+  flex: 1;
+}
+
+.product-image,
+.thumbnail-images img {
+  height: auto;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.thumbnail-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.product-specific__content {
+  padding: 0px 30px;
+  display: flex;
+}
+
+.product-specific__content h1 {
+  margin-top: 0;
+}
+
+.product-specific__content a {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-specific__price {
+  font-size: 1.5em;
+}
+
+/* Contact page */
+
+input,
+select,
+textarea {
+  border: #c4c4c4 1px solid;
+  border-radius: 0.25rem;
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+}
+
+textarea {
+  height: 65%;
+}
+
+.contact-page {
+  max-width: 1000px;
+  min-width: 1000px;
+  margin: 50px auto;
+}
+.contact-flex {
+  display: flex;
+  text-align: left;
+}
+
+.contact-flex > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page {
+  text-align: center;
+}
