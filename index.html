@@ -17,11 +17,21 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
     <header>
       <a href="index.html" class="font-boots"> Guitar kings</a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
       <nav>
         <a href="index.html" class="c-active"> Home</a>
         <a href="guitars.html">Guitars</a>
@@ -45,15 +55,16 @@
             <li><p>Built to last a lifetime</p></li>
             <li><p>Beautiful unique sound</p></li>
             <li><p>Options for all music lovers</p></li>
-            <em><p class="selling-strum">Hand strumming guitars</p></em>
           </ul>
         </div>
-        <img
-          src="images/home-info.jpg"
-          alt="hand strumming on guitar"
-          ,
-          class="l-selling-points__images"
-        />
+        <div class="selling-points-image">
+          <img
+            src="images/home-info.jpg"
+            alt="hand strumming on guitar"
+            ,
+            class="l-selling-points__images"
+          />
+        </div>
       </section>
 
       <section class="l-review">

@@ -1,0 +1,37 @@
+.c-btn {
+  color: var(--whiter);
+  background-color: var(--red);
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 10px 80px;
+  border-radius: 0.25em;
+}
+
+.c-small {
+  padding: 8px 15px;
+  font-size: 0.7em;
+  min-width: 52px;
+  text-align: center;
+  margin-top: 5px;
+}
+.c-sale {
+  color: white;
+  background-color: var(--sale);
+}
+
+.c-active {
+  text-decoration: underline;
+}
+
+.c-small {
+  grid-column: 2;
+  grid-row: 2/3;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+nav a:hover {
+  color: var(--red);
+}

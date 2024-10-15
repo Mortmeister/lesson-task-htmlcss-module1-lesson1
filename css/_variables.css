@@ -1,0 +1,15 @@
+:root {
+  --white: #e8e8e8;
+  --whiter: #fbfbfb;
+  --black: #202020;
+  --red: #bb0000;
+  --sale: #127300;
+  --border-color: #c4c4c4;
+}
+
+:root {
+  --speed-base: 300ms;
+  --speed-fast: 250ms;
+  --speed-faster: 200ms;
+  --speed-fastest: 250ms;
+}
